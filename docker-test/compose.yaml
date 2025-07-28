@@ -10,13 +10,13 @@ services:
     ports: 
       - '4000:4000'
     # naming your container helps for clarity purposes
-    container_name: frontend-container
+    container_name: backend-container
 
   frontend:
     build: ./frontend
     ports: 
       - '3000:3000'
-    container_name: backend-container
+    container_name: frontend-container
 
 # Note: docker volumes are really only neccesary when using an actual database. 
 # My backend doesn't actuall create/store any data, so therefore im not going to include it.

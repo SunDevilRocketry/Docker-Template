@@ -4,7 +4,7 @@ export default function Home() {
   const [message, setMessage] = useState("");
 
   useEffect(() => {
-    fetch("http://backend:4000/") // IMPORTANT: since this fetch requet is calling on the backend container, you must
+    fetch("/api/") // IMPORTANT: since this fetch requet is calling on the backend container, you must
     // use the backend service name, as opposed to local host
       .then(res => res.json())
       .then(data => setMessage(data.message))
