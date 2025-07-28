@@ -1,0 +1,4 @@
+node_modules
+.env
+
+# you can also add anything else that you want to be ignored
