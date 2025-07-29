@@ -23,6 +23,9 @@ COPY . .
 # will also copy node_modules, which is a problem because node_modules is absolutley huge. We can resolve this problem
 # through the use of a .dockerignore file
 
+# This command builds the app, which is necessary for production.
+RUN npm run build
+
 # Tells docker to expose this port so our computer can use it
 EXPOSE 3000
 

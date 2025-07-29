@@ -61,6 +61,12 @@ How to create this?
     - if you decide to make a change in one of your containers, you can use 'docker compose build frontend' to rebuild it,
       where "frontend" is the service name of your container.
 
+
+To run yourself:
+'git clone https://github.com/xeflore1/Docker-Test.git'
+'cd Docker-Test/docker-Test'
+'docker compose up --build'
+
 Now that all that is done, you can run 'docker compose up' in the directory that contains your compose.yaml to 
 run all of your containers together. 
 
