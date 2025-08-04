@@ -71,3 +71,5 @@ To run yourself:
 
 Additional note: for complex projects build time can be quite large, docker.buildcloud is a tool that
 uses the cloud to acheive faster build times. Might be something worth checking out in the furure. 
+
+

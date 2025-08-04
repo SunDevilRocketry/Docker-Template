@@ -1,27 +1,17 @@
 
-# the service object will contain all our containers
+# The service object will contain all our containers
 services:
-  # service name: 
-  backend:
-    # "build:" must be followed by the path to this projects dockerfile
-    # this Dockerfile is what's used to build the container
-    build: ./backend
-    # port forwarding used to run the container
+  backend: # Service name
+    # This Dockerfile is what's used to build the container
+    build: <path to backend dockerfile>
+    # Port forwarding
     ports: 
-      - '4000:4000'
-    # naming your container helps for clarity purposes
-    container_name: backend-container
+      - '<computerport:containerport>'
+    # Name your container
+    container_name: <container name>
 
   frontend:
-    build: ./frontend
+    build: <path to frontend dockerfile>
     ports: 
-      - '3000:3000'
-    container_name: frontend-container
-
-# Note: docker volumes are really only neccesary when using an actual database. 
-# My backend doesn't actuall create/store any data, so therefore im not going to include it.
-# However if you did need it, you can declare it like so:
-
-# tells docker to create a docker volume called "postgress_data"
-# volumes: 
-#   postgress_data: 
+      - '<computerport:containerport>'
+    container_name: <container name>
