@@ -1,3 +1,9 @@
+## Setup:
+- I first created a simple flask backend that includes one route that returns the message: "i love sdr"
+- I also creted a simple nextjs frontend that fetches this route to obtain and display the message
+- You must also install docker desktop at: https://www.docker.com/
+- Bonus tip: if you are using vs code downloading the Docker extension is pretty helpful. 
+
 ### First off, what is an image and container?
 An image can be thought of as a recipie for how to create your project. It contains details on your code, dependancies, 
 configurations, and etc. It's read-only, an image on its own can't actually run anything. Think of it like a class.
@@ -72,13 +78,6 @@ How to create this?
 
 Now that all that is done, you can run 'docker compose up' in the directory that contains your compose.yaml to 
 run all of your containers together. 
-
-To run yourself
-
-	git clone https://github.com/xeflore1/Docker-Test.git
-	cd Docker-Test/docker-Test
-	docker compose up --build
-In order for the project to actually work you will have to fill in the Dockerfile's and compose.yaml
 
 ### Additional notes:
 - For complex projects build time can be quite large, docker.buildcloud is a tool that

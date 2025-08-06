@@ -1,9 +1,13 @@
+
 ## Usage:
-This repository serves as a template for how to containerize an application with a Next.js frontend and flask backend using Docker. A walkthrough of the creation of the project along with complete and more detailed versions of the Dockerfile's and compose.yaml can be found in the [docs folder](./docker-test/docs/). 
 
-## Setup:
-- I first created a simple flask backend that includes one route that returns the message: "i love sdr"
-- I also creted a simple nextjs frontend that fetches this route to obtain and display the message
-- You must also install docker desktop at: https://www.docker.com/
-- Bonus tip: if you are using vs code downloading the Docker extension is pretty helpful. 
+This repository serves as a template containerize an application with a Next.js frontend and Flask backend using Docker. 
 
+### To use this template:
+ 
+```
+git clone https://github.com/xeflore1/Docker-Test.git
+cd Docker-Test/docker-Test
+docker compose up --build
+```
+You must fill in the [Next.js Dockerfile](docker-test/nextjs/Dockerfile), [python Dockerfile](docker-test/python/Dockerfile), and [compose.yaml](docker-test/compose.yaml) for the template to work. A walkthrough of the creation of the project along with complete and more detailed versions of the Dockerfile's and compose.yaml can be found in the [docs folder](./docker-test/docs/).
