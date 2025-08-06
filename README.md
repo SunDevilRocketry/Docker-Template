@@ -1,7 +1,7 @@
 
 ## Usage:
 
-This repository serves as a template containerize an application with a Next.js frontend and Flask backend using Docker. 
+This repository serves as a template to containerize an application with a Next.js frontend and Flask backend using Docker. 
 
 ### To use this template:
  
