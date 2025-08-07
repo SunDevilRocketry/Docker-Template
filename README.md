@@ -1,5 +1,5 @@
 
-## Usage:
+## Docker-Template:
 
 This repository serves as a template to containerize an application with a Next.js frontend and Flask backend using Docker. 
 
