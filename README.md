@@ -6,7 +6,7 @@ This repository serves as a template to containerize an application with a Next.
 ### To use this template:
  
 ```
-git clone https://github.com/xeflore1/Docker-Test.git
+git clone https://github.com/SunDevilRocketry/Docker-Template.git
 cd Docker-Template/docker-Test
 docker compose up --build
 ```
